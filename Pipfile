@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==5.0.2"
+psycopg2-binary = "*"
+django-environ = "*"
+celery = "*"
+pipfile = "*"
+python-decouple = "*"
+pillow = "*"
+django-graphene-permissions = "*"
+django-graphql-jwt = "*"
+requests = "*"
+django-graphql-social-auth = "*"
+djangorestframework = "*"
+django-graphql-playground = "*"
+django-tinymce = "*"
+factory-boy = "==2.0.0"
+django-factory-boy = "*"
+graphene-file-upload = "*"
+django-mptt = "*"
+graphene-django = "*"
+
+
+[dev-packages]
+pytest-django = "*"
+flake8 = "*"
+isort = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+server = "python manage.py runserver"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
